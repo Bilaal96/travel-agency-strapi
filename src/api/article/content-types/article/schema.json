@@ -21,7 +21,8 @@
       "required": true
     },
     "description": {
-      "type": "string"
+      "type": "text",
+      "required": true
     },
     "splash": {
       "type": "media",
