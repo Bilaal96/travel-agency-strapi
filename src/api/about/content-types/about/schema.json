@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About"
+    "displayName": "About",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,15 +15,6 @@
     "content": {
       "type": "richtext",
       "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "title": {
-      "type": "string",
-      "required": true,
-      "default": "About"
     }
   }
 }
