@@ -38,6 +38,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "linkToOriginal": {
+      "type": "string"
     }
   }
 }
