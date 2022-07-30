@@ -22,6 +22,6 @@ module.exports = {
     /**
      * Uncomment to run before application starts
      * Comment out to prevent running EVERY time app is started */
-    await seedArticleCollection();
+    // await seedArticleCollection(10);
   },
 };

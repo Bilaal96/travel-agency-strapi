@@ -11,10 +11,10 @@ const capitalizeEachWord = (str) => {
     .join(" ");
 };
 
-/** Generate dummy entries for Article content-type */
-async function seedArticleCollection() {
-  const numberOfArticlesToCreate = 100;
-
+/** Generate dummy entries for Article content-type
+ * @param { number } [numberOfArticlesToCreate] - Defaults to 10.
+ */
+async function seedArticleCollection(numberOfArticlesToCreate = 10) {
   for (let i = 0; i < numberOfArticlesToCreate; i++) {
     // Create slug based on title
     let title = faker.lorem.words(5);
