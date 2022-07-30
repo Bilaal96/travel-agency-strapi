@@ -1,4 +1,6 @@
-'use strict';
+"use strict";
+
+const { seedArticleCollection } = require("../utils/seed");
 
 module.exports = {
   /**
@@ -16,5 +18,10 @@ module.exports = {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/*{ strapi }*/) {},
+  async bootstrap(/* { strapi } */) {
+    /**
+     * Uncomment to run before application starts
+     * Comment out to prevent running EVERY time app is started */
+    await seedArticleCollection();
+  },
 };
